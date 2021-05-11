@@ -51,8 +51,8 @@ public class BoxOfficeMoviesAdapter extends RecyclerView.Adapter<BoxOfficeMovies
         final Movie movie = aMovies.get(position);
         // Populate the data into the template view using the data object
         holder.tvTitle.setText(movie.getTitle());
-        holder.tvCriticsScore.setText("Score: " + movie.getTitle() + "%");
-        holder.tvCast.setText(movie.getTitle().toString());
+        holder.tvCriticsScore.setText("Rating: " + movie.getVoteAverage() + "/10");
+        holder.tvCast.setText("Release Date : " + movie.getReleaseDate());
         Picasso.get().load("https://designwizard.com/wp-content/uploads/2018/12/dbbd48a0-ce79-11e8-b230-8f1568ac0a11.jpg").into(holder.ivPosterImage);
 
     }
