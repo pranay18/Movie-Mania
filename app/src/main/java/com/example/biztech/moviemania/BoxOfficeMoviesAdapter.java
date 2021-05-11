@@ -53,7 +53,7 @@ public class BoxOfficeMoviesAdapter extends RecyclerView.Adapter<BoxOfficeMovies
         holder.tvTitle.setText(movie.getTitle());
         holder.tvCriticsScore.setText("Score: " + movie.getTitle() + "%");
         holder.tvCast.setText(movie.getTitle().toString());
-        Picasso.get().load(movie.getPosterPath()).into(holder.ivPosterImage);
+        Picasso.get().load("https://designwizard.com/wp-content/uploads/2018/12/dbbd48a0-ce79-11e8-b230-8f1568ac0a11.jpg").into(holder.ivPosterImage);
 
     }
 
